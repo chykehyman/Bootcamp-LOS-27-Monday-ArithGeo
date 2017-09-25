@@ -26,7 +26,7 @@ describe("Determine the sequence(arithmetic or geometric) of an array of numbers
     describe("Test case for an empty array", function() {
 
         it("should return 0 for an empty array", function() {
-            assert(aritGeo([])).toEqual(0);
+            assert.equal(aritGeo([]), 0);
         });
 
     });
@@ -34,11 +34,11 @@ describe("Determine the sequence(arithmetic or geometric) of an array of numbers
     describe("Test case for length of array less than 3", function() {
 
         it("should return -1 for an array length of 1", function() {
-            assert(aritGeo([2])).toEqual(-1);
+            assert.equal(aritGeo([2]), -1);
         });
 
         it("should return -1 for an array length of 2", function() {
-            assert(aritGeo([2, 4])).toEqual(-1);
+            assert.equal(aritGeo([2, 4]), -1);
         });
 
     });
@@ -87,15 +87,15 @@ describe("Determine the sequence(arithmetic or geometric) of an array of numbers
         });
 
         it("should return -1 for [1, 3, 6, 10, 15]", function() {
-            expect(aritGeo([1, 3, 6, 10, 15]), -1);
+            assert.equal(aritGeo([1, 3, 6, 10, 15]), -1);
         });
 
         it("should return -1 for [1, 8, 27, 64, 125]", function() {
-            expect(aritGeo([1, 8, 27, 64, 125]), -1);
+            assert.equal(aritGeo([1, 8, 27, 64, 125]), -1);
         });
 
         it("should return -1 for [1, 9, 27, 64, 125]", function() {
-            expect(aritGeo([1, 9, 27, 64, 125]), -1);
+            assert.equal(aritGeo([1, 9, 27, 64, 125]), -1);
         });
 
     });
