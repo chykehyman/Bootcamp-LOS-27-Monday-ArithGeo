@@ -17,7 +17,7 @@ const aritGeo = (array) => {
         // Check if array is empty
         if (array.length === 0) {
             return 0;
-        } else if (array.length <= 2) {
+        } else if (array.length < 3) {
             return -1
         } else {
             // Get highest array index
