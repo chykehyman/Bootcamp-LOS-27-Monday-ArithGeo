@@ -4,4 +4,4 @@ This is a function that takes in an array of integer values as argument and requ
 ## Installation and Dependencies
 > - Run `npm install` to install dependencies
 > - Run `npm run build` to compile all files in src directory using babel
-> - Run `npm start test` to perform tests using mocha
+> - Run `npm run test` to perform tests using mocha
